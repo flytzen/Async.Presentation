@@ -1,5 +1,7 @@
 # Async in C# Deep Dive
 
+This is the presentation and sample code for my talk at the DotNet Oxford User group on Async
+
 This is not yet another session on how to use async/await. You are probably already using that so we won't bore each other with the syntax. Instead we shall be diving deep into how Async actually works and having a look at the benefits and pitfalls.
 
 The way Async is being described, it sounds like it will make your code faster and more scalable, whilst solving all your problems and achieving world peace - all before lunch.  
