@@ -121,7 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AsyncController.cs" />
-    <Compile Include="Controllers\DeadlockExampleController - Copy.cs" />
+    <Compile Include="Controllers\DeadlockSyncController.cs" />
     <Compile Include="Controllers\DeadlockExampleController.cs" />
     <Compile Include="Controllers\DeadlockAlwaysController.cs" />
     <Compile Include="Controllers\ExplainAsyncThreadsController.cs" />

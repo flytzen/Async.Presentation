@@ -16,10 +16,11 @@ namespace OldWeb.Controllers
         {
             var sw = Stopwatch.StartNew();
             var tasks = Enumerable.Range(0, 10).Select(i => this.DosomethingAsync()).ToList();
-            foreach (var task in tasks)
-            {
-                await task;
-            }
+            await Task.WhenAll(tasks);
+            //foreach (var task in tasks)
+            //{
+            //    await task;
+            //}
             sw.Stop();
             return new ContentResult() { Content = sw.ElapsedMilliseconds.ToString("N0") };
         }
@@ -29,8 +30,8 @@ namespace OldWeb.Controllers
             Debug.WriteLine($"Starting on Thread id: {Thread.CurrentThread.ManagedThreadId}");
 
             Thread.Sleep(1000);
-            await Task.Delay(1000);
-            ////await Task.Delay(1000).ConfigureAwait(false);
+            ////await Task.Delay(1000);
+            await Task.Delay(1000).ConfigureAwait(false);
             Debug.WriteLine($"Returning on Thread id: {Thread.CurrentThread.ManagedThreadId}");
 
             Thread.Sleep(1000);

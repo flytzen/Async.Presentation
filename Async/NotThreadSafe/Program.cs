@@ -18,7 +18,6 @@
         }
     }
 
-    [SuppressMessage("StyleCop.CSharp.MaintainabilityRules", "SA1402:FileMayOnlyContainASingleClass", Justification = "Reviewed. Suppression is OK here.")]
 public class Tester
 {
     private const int TaskCount = 1000;
